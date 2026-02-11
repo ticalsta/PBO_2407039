@@ -2,30 +2,58 @@ package latihan_pbo.latihan1;
 
 import java.util.Scanner;
 
+// import java.util.Scanner;
+
 class Cafe{
-    String nama;
+    String Nama;
     String alamat;
 
-    Cafe(String nama, String alamat){
-        this.nama = nama;
+    Cafe(String Nama, String alamat){
+        this.Nama = Nama;
         this.alamat = alamat;
-        System.out.println(nama);
-        System.out.println(alamat);
+        System.out.println("Nama cafenya adalah " + this.Nama);
+        System.out.println("alamatnya ada di daerah: " + this.alamat);
     }
     
     // method
     void buka(){
-        System.out.println(" Cafe " + nama + " Sudah Buka ");
+        System.out.println("Cafe " + Nama + " Sudah Buka ");
     }
+
+    public String getNama() {
+        return Nama;
+    }
+
+    public void setNama(String Nama) {
+        this.Nama = Nama;
+        this.alamat = alamat;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
 }
+    public class Main {
+        public static void main(String[] args) {
 
+            // Scanner input = new Scanner(System.in);
+            // Cafe cafe = new Cafe();
 
-public class Main {
-    public static void main(String[] args) {
+            // System.out.println("Masukkan nama cafe: ");
+            // cafe.nama = input.nextLine();
+
+            // System.out.println("nama yang diinput adalah : " + cafe.nama);
+            //cafe.buka();
+        
 
     
     // Cafe cafe1 = new Cafe();
-    Cafe cafe4 = new Cafe ("esemmah", "Indramayu Kota");
+    Cafe cafe4 = new Cafe ("essemah", "Indramayu Kota");
     cafe4.buka();
     // cafe1.nama = "Kopi Kenangan"
     // cafe1.alamat = "Indramayu"
